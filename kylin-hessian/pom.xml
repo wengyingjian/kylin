@@ -6,8 +6,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wengyingjian.kylin</groupId>
-    <artifactId>kylin-hessian</artifactId>
+    <artifactId>kylin-hessian-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>kylin-hessian-client</module>
+        <module>kylin-hessian-server</module>
+    </modules>
 
 
 </project>
