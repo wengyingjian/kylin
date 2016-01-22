@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>kylin-parent-application</module>
+        <module>kylin-parent-springboot</module>
         <module>kylin-parent-common</module>
     </modules>
 </project>
