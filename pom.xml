@@ -16,6 +16,7 @@
         <module>kylin-redis</module>
         <module>kylin-hessian</module>
         <module>kylin-rabbitmq</module>
+        <module>kylin-util</module>
     </modules>
 
 
