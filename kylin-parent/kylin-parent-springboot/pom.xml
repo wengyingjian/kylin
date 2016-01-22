@@ -21,19 +21,22 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
-        <mybatis.version>3.2.8</mybatis.version>
-        <mybatis-spring.version>1.2.3</mybatis-spring.version>
-        <tomcat-jdbc.version>8.0.23</tomcat-jdbc.version>
-        <hessian.version>4.0.38</hessian.version>
 
         <!--kylin-->
         <kylin.version>1.0-SNAPSHOT</kylin.version>
-
         <kylin.datasource.version>${kylin.version}</kylin.datasource.version>
         <kylin.rabbitmq.version>${kylin.version}</kylin.rabbitmq.version>
         <kylin.redis.version>${kylin.version}</kylin.redis.version>
         <kylin.hessian.client.version>${kylin.version}</kylin.hessian.client.version>
         <kylin.hessian.server.version>${kylin.version}</kylin.hessian.server.version>
+
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis-spring.version>1.2.3</mybatis-spring.version>
+        <tomcat-jdbc.version>8.0.23</tomcat-jdbc.version>
+        <hessian.version>4.0.37</hessian.version>
+        <commons-lang3.version>3.1</commons-lang3.version>
+        <raven.log4j2.version>6.0.0</raven.log4j2.version>
+        <jackson-jaxrs-json-provider.version>2.6.0</jackson-jaxrs-json-provider.version>
 
     </properties>
 
@@ -67,36 +70,49 @@
             </dependency>
 
 
+
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis-spring</artifactId>
                 <version>${mybatis-spring.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-jdbc</artifactId>
                 <version>${tomcat-jdbc.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.caucho</groupId>
                 <artifactId>hessian</artifactId>
                 <version>${hessian.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>net.kencochrane.raven</groupId>
                 <artifactId>raven-log4j2</artifactId>
                 <version>${raven.log4j2.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.jaxrs</groupId>
+                <artifactId>jackson-jaxrs-json-provider</artifactId>
+                <version>${jackson-jaxrs-json-provider.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
