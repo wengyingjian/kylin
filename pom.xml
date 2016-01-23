@@ -14,10 +14,10 @@
         <module>kylin-common</module>
         <module>kylin-datasource</module>
         <module>kylin-redis</module>
-        <module>kylin-hessian</module>
         <module>kylin-rabbitmq</module>
         <module>kylin-util</module>
         <module>kylin-log4j2</module>
+        <module>kylin-rpc</module>
     </modules>
 
 
