@@ -1,14 +1,5 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.common.exception;
 
-/**
- *
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 2.0 15/10/18
- * @since 2.0
- */
 public class BaseException extends RuntimeException {
 
     private int status;

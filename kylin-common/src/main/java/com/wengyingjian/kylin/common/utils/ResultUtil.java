@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.common.utils;
 
 import com.wengyingjian.kylin.common.enums.ResultStatus;
@@ -8,10 +5,6 @@ import com.wengyingjian.kylin.common.model.Result;
 
 /**
  * 返回结果工具类
- *
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 1.0 15/11/12
- * @since 1.0
  */
 public class ResultUtil {
 

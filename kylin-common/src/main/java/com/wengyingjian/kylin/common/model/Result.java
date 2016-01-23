@@ -1,14 +1,8 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.common.model;
 
 /**
  * 公用返回值结构
  * 
- * @author heqingpan
- *
- * @param <T>
  */
 @SuppressWarnings("serial")
 public class Result<T> implements java.io.Serializable {
