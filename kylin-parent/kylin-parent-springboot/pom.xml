@@ -24,6 +24,7 @@
 
         <!--kylin-->
         <kylin.version>1.0-SNAPSHOT</kylin.version>
+        <kylin.log4j2.version>${kylin.version}</kylin.log4j2.version>
         <kylin.datasource.version>${kylin.version}</kylin.datasource.version>
         <kylin.rabbitmq.version>${kylin.version}</kylin.rabbitmq.version>
         <kylin.redis.version>${kylin.version}</kylin.redis.version>
@@ -43,6 +44,11 @@
     <dependencyManagement>
         <dependencies>
             <!--my dependency-->
+            <dependency>
+                <groupId>com.wengyingjian.kylin</groupId>
+                <artifactId>kylin-log4j2</artifactId>
+                <version>${kylin.log4j2.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.wengyingjian.kylin</groupId>
                 <artifactId>kylin-datasource</artifactId>
@@ -68,7 +74,6 @@
                 <artifactId>kylin-hessian-server</artifactId>
                 <version>${kylin.hessian.server.version}</version>
             </dependency>
-
 
 
             <dependency>
