@@ -1,0 +1,60 @@
+Configuration:
+  Appenders:
+    RollingRandomAccessFile:
+      - name: infoRollingFile
+        ThresholdFilter:
+          level: error
+          onMatch: DENY
+          onMismatch: ACCEPT
+        fileName: /var/log/tomcat/${log.appName}/info.log
+        filePattern: /var/log/tomcat/${log.appName}/%d{yyyy-MM-dd}.log
+        PatternLayout:
+          Pattern: '[%d]\t%p\t[${log.appName}]\t%c{1}\t%M\t[%t]\t[%X{reqId}]\t--\t%m%n'
+        Policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true
+      - name: errorRollingFile
+        ThresholdFilter:
+          level: error
+          onMatch: ACCEPT
+          onMismatch: DENY
+        fileName: /var/log/tomcat/${log.appName}/err.log
+        filePattern: /var/log/tomcat/${log.appName}/err.%d{yyyy-MM-dd}.log
+        PatternLayout:
+          Pattern: '[%d]\t%p\t[${log.appName}]\t%c{1}\t%M\t[%t]\t[%X{reqId}]\t--\t%m%n'
+        Policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true
+    Raven:
+      - name: sentry
+        ThresholdFilter:
+          level: error
+          onMatch: ACCEPT
+          onMismatch: DENY
+        dsn: ${log.sentry.dsn}
+    Console:
+      name: console
+      PatternLayout:
+        Pattern: '[%d]\t%p\t[${log.appName}]\t%c{1}\t%M\t[%t]\t[%X{reqId}]\t--\t%m%n'
+      target: SYSTEM_OUT
+  Loggers:
+#    Logger:
+#      - name: org.apache
+#        level: debug
+#        additivity: false
+#        AppenderRef:
+#          ref: console
+#      - name: com.store59
+#        level: debug
+#        additivity: false
+#        AppenderRef:
+#          ref: console
+    Root:
+      level: ${log.level}
+      AppenderRef:
+#        - ref: console
+        - ref: infoRollingFile
+        - ref: errorRollingFile
+        - ref: sentry
