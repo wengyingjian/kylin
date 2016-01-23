@@ -11,6 +11,7 @@
 
     <artifactId>kylin-rpc-parent</artifactId>
     <packaging>pom</packaging>
+
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
@@ -18,7 +19,6 @@
         <module>kylin-rpc-server</module>
         <module>kylin-rpc-protocol</module>
         <module>kylin-rpc-monitor</module>
-        <module>kylin-rpc-monitor-statsd</module>
     </modules>
 
     <dependencies>

@@ -22,22 +22,21 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
 
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis-spring.version>1.2.3</mybatis-spring.version>
+        <tomcat-jdbc.version>8.0.23</tomcat-jdbc.version>
+        <hessian.version>4.0.38</hessian.version>
+        <commons-lang3.version>3.1</commons-lang3.version>
+        <raven.log4j2.version>6.0.0</raven.log4j2.version>
+        <jackson-jaxrs-json-provider.version>2.6.0</jackson-jaxrs-json-provider.version>
+
         <!--kylin-->
         <kylin.version>1.0-SNAPSHOT</kylin.version>
         <kylin.log4j2.version>${kylin.version}</kylin.log4j2.version>
         <kylin.datasource.version>${kylin.version}</kylin.datasource.version>
         <kylin.rabbitmq.version>${kylin.version}</kylin.rabbitmq.version>
         <kylin.redis.version>${kylin.version}</kylin.redis.version>
-        <kylin.hessian.client.version>${kylin.version}</kylin.hessian.client.version>
-        <kylin.hessian.server.version>${kylin.version}</kylin.hessian.server.version>
-
-        <mybatis.version>3.2.8</mybatis.version>
-        <mybatis-spring.version>1.2.3</mybatis-spring.version>
-        <tomcat-jdbc.version>8.0.23</tomcat-jdbc.version>
-        <hessian.version>4.0.37</hessian.version>
-        <commons-lang3.version>3.1</commons-lang3.version>
-        <raven.log4j2.version>6.0.0</raven.log4j2.version>
-        <jackson-jaxrs-json-provider.version>2.6.0</jackson-jaxrs-json-provider.version>
+        <kylin.rpc.version>${kylin.version}</kylin.rpc.version>
 
     </properties>
 
@@ -66,13 +65,18 @@
             </dependency>
             <dependency>
                 <groupId>com.wengyingjian.kylin</groupId>
-                <artifactId>kylin-hessian-client</artifactId>
-                <version>${kylin.hessian.client.version}</version>
+                <artifactId>kylin-rpc-client</artifactId>
+                <version>${kylin.rpc.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.wengyingjian.kylin</groupId>
-                <artifactId>kylin-hessian-server</artifactId>
-                <version>${kylin.hessian.server.version}</version>
+                <artifactId>kylin-rpc-server</artifactId>
+                <version>${kylin.rpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wengyingjian.kylin</groupId>
+                <artifactId>kylin-rpc-monitor</artifactId>
+                <version>${kylin.rpc.version}</version>
             </dependency>
 
 
