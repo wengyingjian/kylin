@@ -17,6 +17,7 @@
         <module>kylin-hessian</module>
         <module>kylin-rabbitmq</module>
         <module>kylin-util</module>
+        <module>kylin-log4j2</module>
     </modules>
 
 
