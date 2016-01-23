@@ -2,6 +2,7 @@
 <config>
 	<group>
 		<property name="log.appName" description="用于日志存放的相对路径的目录名及日志中的应用名称, 请配置成模块名称" />
+		<property name="log.sentry.dsn" defaultValue="aa" description="监控"/>
 		<property name="log.level" defaultValue="info" description="日志级别" />
 	</group>
 	<script>
