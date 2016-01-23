@@ -19,5 +19,15 @@
         <module>kylin-hessian-server</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wengyingjian.kylin</groupId>
+            <artifactId>kylin-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
