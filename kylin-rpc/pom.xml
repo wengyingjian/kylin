@@ -3,13 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>kylin-aggregate</artifactId>
         <groupId>com.wengyingjian.kylin</groupId>
+        <artifactId>kylin-parent-springboot</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../kylin-parent/kylin-parent-springboot/pom.xml</relativePath>
     </parent>
+
+    <artifactId>kylin-rpc-parent</artifactId>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kylin-rpc</artifactId>
+    <modules>
+        <module>kylin-rpc-client</module>
+        <module>kylin-rpc-server</module>
+        <module>kylin-rpc-protocol</module>
+        <module>kylin-rpc-monitor</module>
+        <module>kylin-rpc-monitor-statsd</module>
+    </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wengyingjian.kylin</groupId>
+            <artifactId>kylin-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

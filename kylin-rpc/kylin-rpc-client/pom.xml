@@ -3,13 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>kylin-hessian-parent</artifactId>
         <groupId>com.wengyingjian.kylin</groupId>
+        <artifactId>kylin-rpc-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kylin-rpc-client</artifactId>
 
+    <modelVersion>4.0.0</modelVersion>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wengyingjian.kylin</groupId>
+            <artifactId>kylin-rpc-protocol</artifactId>
+        </dependency>
+    </dependencies>
 </project>

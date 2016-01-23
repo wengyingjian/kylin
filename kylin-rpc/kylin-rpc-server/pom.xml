@@ -12,4 +12,27 @@
     <artifactId>kylin-rpc-server</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wengyingjian.kylin</groupId>
+            <artifactId>kylin-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wengyingjian.kylin</groupId>
+            <artifactId>kylin-rpc-protocol</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
