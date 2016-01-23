@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group>
+        <property name="rabbitmq.event.entry" defaultValue="" description="rabbitmq.event.entry" />
+    </group>
+    <script>
+        <generate template="rabbitmq.properties.vm" destfile="rabbitmq.properties"></generate>
+    </script>
+</config>
