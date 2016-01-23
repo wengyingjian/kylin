@@ -18,7 +18,6 @@
         <module>kylin-rpc-client</module>
         <module>kylin-rpc-server</module>
         <module>kylin-rpc-protocol</module>
-        <module>kylin-rpc-monitor</module>
     </modules>
 
     <dependencies>
