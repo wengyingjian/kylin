@@ -3,7 +3,8 @@
  */
 package com.wengyingjian.kylin.hessian.client.utils;
 
-import com.store59.kylin.rpc.client.ServiceUrlSelector;
+
+import com.wengyingjian.kylin.hessian.client.ServiceUrlSelector;
 
 /**
  *

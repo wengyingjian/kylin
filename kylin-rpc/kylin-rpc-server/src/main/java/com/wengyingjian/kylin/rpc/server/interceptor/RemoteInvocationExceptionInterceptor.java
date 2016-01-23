@@ -9,9 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.ClassUtils;
 
-import com.store59.kylin.common.exception.BaseException;
-import com.store59.kylin.common.model.Result;
-
+import com.wengyingjian.kylin.common.exception.BaseException ;
+import com.wengyingjian.kylin.common.model.Result ;
 /**
  * 捕捉远程调用异常.
  * 

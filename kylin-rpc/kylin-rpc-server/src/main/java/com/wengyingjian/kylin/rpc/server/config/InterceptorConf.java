@@ -3,7 +3,7 @@
  */
 package com.wengyingjian.kylin.rpc.server.config;
 
-import com.store59.rpc.utils.server.interceptor.RemoteInvocationMonitorInterceptor;
+import com.wengyingjian.kylin.rpc.server.interceptor.RemoteInvocationMonitorInterceptor;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;

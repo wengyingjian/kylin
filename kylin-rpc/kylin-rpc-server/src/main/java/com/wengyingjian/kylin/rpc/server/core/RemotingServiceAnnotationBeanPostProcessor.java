@@ -19,10 +19,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
 
-import com.store59.rpc.utils.server.annotation.RemoteService;
-import com.store59.rpc.utils.server.annotation.ServiceType;
-import com.store59.rpc.utils.server.config.RemotingServiceConf;
-import com.store59.rpc.utils.server.interceptor.RemoteInvocationExceptionInterceptor;
+import com.wengyingjian.kylin.rpc.server.annotation.RemoteService;
+import com.wengyingjian.kylin.rpc.server.annotation.ServiceType;
+import com.wengyingjian.kylin.rpc.server.config.RemotingServiceConf;
+import com.wengyingjian.kylin.rpc.server.interceptor.RemoteInvocationExceptionInterceptor;
 
 /**
  * Created by shanren on 7/16/15.
