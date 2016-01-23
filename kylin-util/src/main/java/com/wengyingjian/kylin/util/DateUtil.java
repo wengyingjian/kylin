@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.util;
 
 import java.text.ParsePosition;
@@ -8,11 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 1.0 15/11/6
- * @since 1.0
- */
 public class DateUtil {
 
     /**

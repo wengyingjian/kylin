@@ -1,16 +1,8 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 1.0 15/11/6
- * @since 1.0
- */
 public class JsonUtil {
 
     private static ObjectMapper JSON = new ObjectMapper();
