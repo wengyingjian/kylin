@@ -1,0 +1,5 @@
+statsd.host=${statsd.host}
+statsd.port=${statsd.port}
+statsd.multiMetrics=${statsd.multiMetrics}
+statsd.bufferSize=${statsd.bufferSize}
+statsd.flushPeriod=${statsd.flushPeriod}
