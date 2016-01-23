@@ -21,7 +21,7 @@ import com.wengyingjian.kylin.datasource.factory.MasterDB;
 public class TransactionTemplateConfiguration {
 
     /**
-     * @see com.wengyingjian.kylin.datasource.factory.MasterDB
+     * @see MasterDB
      */
     @Bean
     public TransactionTemplate transactionTemplate(PlatformTransactionManager txManager) {

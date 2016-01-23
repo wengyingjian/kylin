@@ -4,6 +4,8 @@
 package com.wengyingjian.kylin.datasource.factory;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,12 +14,11 @@ import org.springframework.stereotype.Component;
  * @version 2.0 15/11/3
  * @since 2.0
  */
-@ConfigurationProperties(prefix = "datasource")
 @Component
+@ConfigurationProperties(prefix = "datasource")
+@PropertySource("classpath:datasource.properties")
+@EnableConfigurationProperties(DatasourceProperties.class)
 public class DatasourceProperties {
-
-    public static String PLACEHOLDER_NAME_MASTER_MAPPERS_PATH = "datasource.master.mappersPath";
-    public static String PLACEHOLDER_NAME_SLAVE_MAPPERS_PATH = "datasource.slave.mappersPath";
 
     private DB master;
     private DB slave;
