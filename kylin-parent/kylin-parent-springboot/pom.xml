@@ -32,6 +32,7 @@
 
         <!--kylin-->
         <kylin.version>1.0-SNAPSHOT</kylin.version>
+        <kylin.common.version>${kylin.version}</kylin.common.version>
         <kylin.log4j2.version>${kylin.version}</kylin.log4j2.version>
         <kylin.datasource.version>${kylin.version}</kylin.datasource.version>
         <kylin.rabbitmq.version>${kylin.version}</kylin.rabbitmq.version>
@@ -43,6 +44,11 @@
     <dependencyManagement>
         <dependencies>
             <!--my dependency-->
+            <dependency>
+                <groupId>com.wengyingjian.kylin</groupId>
+                <artifactId>kylin-common</artifactId>
+                <version>${kylin.common.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.wengyingjian.kylin</groupId>
                 <artifactId>kylin-log4j2</artifactId>
