@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.wengyingjian.kylin</groupId>
             <artifactId>kylin-rpc-protocol</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${kylin.rpc.version}</version>
         </dependency>
     </dependencies>
 </project>
