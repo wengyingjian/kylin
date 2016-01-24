@@ -20,7 +20,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 @ConfigurationProperties(prefix = "redis")
-//@PropertySource("classpath:redis.properties")
+@PropertySource("classpath:redis.properties")
 public class RedisExpireProperties extends RedisProperties {
 
     private String cachePrefix;
