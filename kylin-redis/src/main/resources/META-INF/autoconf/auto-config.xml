@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group>
+        <property name="redis.host" defaultValue="localhost" description="redis host" />
+        <property name="redis.port" defaultValue="6379" description="redis port" />
+        <property name="redis.password" defaultValue="" required="false" description="redis password" />
+        <property name="redis.cachePrefix" defaultValue="" description="redis缓存前缀" />
+        <property name="redis.defaultExpiration" defaultValue="300" description="redis缓存默认超时时间，单位为秒，0表示缓存不超时" />
+    </group>
+
+    <script>
+        <generate template="redis.properties.vm" destfile="redis.properties" />
+    </script>
+</config>

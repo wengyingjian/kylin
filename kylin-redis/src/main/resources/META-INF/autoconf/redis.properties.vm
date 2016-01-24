@@ -1,0 +1,5 @@
+redis.host=${redis.host}
+redis.port=${redis.port}
+redis.password=${redis.password}
+redis.cachePrefix=${redis.cachePrefix}
+redis.defaultExpiration=${redis.defaultExpiration}
