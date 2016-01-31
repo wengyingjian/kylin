@@ -18,24 +18,24 @@ maven脚手架项目,可以通过该archetype自动集成此项目的各个模�
 ### 3.kylin-log4j2
 使用slfj日志
 
-### kylin-parent
+### 4.kylin-parent
 包含两个子模块
 
 1. kylin-parent-common 普通项目parent
 2. kylin-parent-springboot springboot项目parent
 
-### 4.kylin-rabbitmq
+### 5.kylin-rabbitmq
 对rabbitmq进行自动化配置,并提供常用SimpleRabbitTemplate
 
-### kylin-redis
+### 6.kylin-redis
 对redis进行自动化配置
 
-### 5.kylin-rpc
+### 7..kylin-rpc
 包含三个子模块
 
 1. kylin-rpc-protocol rpc(hessian)调用协议
 2. kylin-rpc-client rpc(hessian)调用客户端依赖包
 3. kylin-rpc-client rpc(hessian)调用服务器依赖包
 
-### 6.kylin-util
+### 8..kylin-util
 包含一些常用的工具类
