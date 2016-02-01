@@ -70,8 +70,8 @@ public class ResultUtil {
      * @return * @see ResultUtil#genResult(Object, int, String)
      * @see ResultStatus#COMMON_ERROR
      */
-    public static Result genCommonError(String msg) {
-        return genResult(ResultStatus.COMMON_ERROR.getCode(), msg);
+    public static Result genCommonError(String msg, String... args) {
+        return genResult(ResultStatus.COMMON_ERROR.getCode(), String.format(msg, args));
     }
 
 }
