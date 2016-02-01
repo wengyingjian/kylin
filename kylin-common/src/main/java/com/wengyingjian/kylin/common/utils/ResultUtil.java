@@ -70,7 +70,7 @@ public class ResultUtil {
      * @return * @see ResultUtil#genResult(Object, int, String)
      * @see ResultStatus#COMMON_ERROR
      */
-    public static Result genCommonError(String msg, String... args) {
+    public static Result genCommonError(String msg, Object... args) {
         return genResult(ResultStatus.COMMON_ERROR.getCode(), String.format(msg, args));
     }
 
