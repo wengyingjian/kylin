@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.datasource.factory;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
@@ -19,12 +16,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
-/**
- *
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 2.0 15/11/3
- * @since 2.0
- */
 @Component
 @Configuration
 @EnableTransactionManagement

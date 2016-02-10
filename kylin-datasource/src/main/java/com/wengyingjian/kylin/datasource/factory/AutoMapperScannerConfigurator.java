@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.datasource.factory;
 
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -11,12 +8,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import java.util.Properties;
 
-/**
- *
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 1.0 15/11/12
- * @since 1.0
- */
 @Configuration
 @Component
 public class AutoMapperScannerConfigurator {

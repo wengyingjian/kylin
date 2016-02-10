@@ -1,15 +1,7 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.datasource.factory;
 
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
-/**
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 2.0 15/11/5
- * @since 2.0
- */
 public class DBHelper {
 
     private static String url    = "jdbc:mysql://%s:%d/%s?useUnicode=true&characterEncoding=utf8";
@@ -18,7 +10,7 @@ public class DBHelper {
     public static int DEFAULT_MIN_IDLE = 2;
     public static int DEFAULT_MAX_ACTIVE = 20;
 
-    public static PoolProperties buildPoolProperties(DatasourceProperties.DB dbProperties) {
+    public static PoolProperties buildPoolProperties(DatasourceProperties.Datasource dbProperties) {
         if (dbProperties == null) {
             return null;
         }
@@ -35,7 +27,7 @@ public class DBHelper {
             dbProperties.setInitialSize(dbProperties.getMinIdle());
         }
         PoolProperties p = new PoolProperties();
-        p.setUrl(String.format(url, dbProperties.getHost(), dbProperties.getPort(), dbProperties.getDb()));
+        p.setUrl(String.format(url, dbProperties.getHost(), dbProperties.getPort(), dbProperties.getDatasource()));
         p.setDriverClassName(driver);
         p.setUsername(dbProperties.getUsername());
         p.setPassword(dbProperties.getPassword());

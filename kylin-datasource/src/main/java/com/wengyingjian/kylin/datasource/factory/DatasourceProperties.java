@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2015, 59store. All rights reserved.
- */
 package com.wengyingjian.kylin.datasource.factory;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,41 +5,35 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-/**
- *
- * @author <a href="mailto:chenyb@59store.com">山人</a>
- * @version 2.0 15/11/3
- * @since 2.0
- */
 @Component
 @ConfigurationProperties(prefix = "datasource")
 @PropertySource("classpath:datasource.properties")
 @EnableConfigurationProperties(DatasourceProperties.class)
 public class DatasourceProperties {
 
-    private DB master;
-    private DB slave;
+    private Datasource master;
+    private Datasource slave;
 
-    public DB getMaster() {
+    public Datasource getMaster() {
         return master;
     }
 
-    public void setMaster(DB master) {
+    public void setMaster(Datasource master) {
         this.master = master;
     }
 
-    public DB getSlave() {
+    public Datasource getSlave() {
         return slave;
     }
 
-    public void setSlave(DB slave) {
+    public void setSlave(Datasource slave) {
         this.slave = slave;
     }
 
-    public static class DB {
+    public static class Datasource {
         private String host;
         private int    port;
-        private String db;
+        private String Datasource;
         private String username;
         private String password;
         private String mappersPath;
@@ -81,12 +72,12 @@ public class DatasourceProperties {
             this.port = port;
         }
 
-        public String getDb() {
-            return db;
+        public String getDatasource() {
+            return Datasource;
         }
 
-        public void setDb(String db) {
-            this.db = db;
+        public void setDatasource(String Datasource) {
+            this.Datasource = Datasource;
         }
 
         public String getUsername() {
