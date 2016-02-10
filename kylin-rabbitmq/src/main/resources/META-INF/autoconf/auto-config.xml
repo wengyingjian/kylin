@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <group>
-        <property name="rabbitmq.event.entry" defaultValue="" description="rabbitmq.event.entry" />
+        <property name="spring.rabbitmq.host" defaultValue="localhost" description="rabbitmq server host" />
+        <property name="spring.rabbitmq.port" defaultValue="5672" description="rabbitmq server port" />
+        <property name="spring.rabbitmq.username" defaultValue="guest" description="rabbitmq server username" />
+        <property name="spring.rabbitmq.password" defaultValue="guest" description="rabbitmq server password" />
     </group>
     <script>
         <generate template="rabbitmq.properties.vm" destfile="rabbitmq.properties"></generate>
