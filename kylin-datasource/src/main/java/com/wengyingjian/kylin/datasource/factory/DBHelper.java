@@ -27,7 +27,7 @@ public class DBHelper {
             dbProperties.setInitialSize(dbProperties.getMinIdle());
         }
         PoolProperties p = new PoolProperties();
-        p.setUrl(String.format(url, dbProperties.getHost(), dbProperties.getPort(), dbProperties.getDatasource()));
+        p.setUrl(String.format(url, dbProperties.getHost(), dbProperties.getPort(), dbProperties.getDb()));
         p.setDriverClassName(driver);
         p.setUsername(dbProperties.getUsername());
         p.setPassword(dbProperties.getPassword());

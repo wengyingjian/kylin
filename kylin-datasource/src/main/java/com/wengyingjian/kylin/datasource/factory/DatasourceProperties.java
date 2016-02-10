@@ -32,21 +32,21 @@ public class DatasourceProperties {
 
     public static class Datasource {
         private String host;
-        private int    port;
-        private String Datasource;
+        private int port;
+        private String db;
         private String username;
         private String password;
         private String mappersPath;
-        private int    maxActive;
-        private int    minIdle;
-        private int    maxIdle;
-        private int    validationInterval = 30000;
-        private int    validationQueryTimeout = 5;
-        private int    timeBetweenEvictionRunsMillis = 1800000;
-        private int    initialSize;
-        private int    maxWait = 10000;
-        private int    removeAbandonedTimeout = 60;
-        private int    minEvictableIdleTimeMillis = 30000;
+        private int maxActive;
+        private int minIdle;
+        private int maxIdle;
+        private int validationInterval = 30000;
+        private int validationQueryTimeout = 5;
+        private int timeBetweenEvictionRunsMillis = 1800000;
+        private int initialSize;
+        private int maxWait = 10000;
+        private int removeAbandonedTimeout = 60;
+        private int minEvictableIdleTimeMillis = 30000;
 
         public String getMappersPath() {
             return mappersPath;
@@ -72,12 +72,12 @@ public class DatasourceProperties {
             this.port = port;
         }
 
-        public String getDatasource() {
-            return Datasource;
+        public String getDb() {
+            return db;
         }
 
-        public void setDatasource(String Datasource) {
-            this.Datasource = Datasource;
+        public void setDb(String db) {
+            this.db = db;
         }
 
         public String getUsername() {
