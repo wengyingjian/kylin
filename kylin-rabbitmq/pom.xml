@@ -5,9 +5,9 @@
 
     <parent>
         <groupId>com.wengyingjian.kylin</groupId>
-        <artifactId>kylin-parent-springboot</artifactId>
+        <artifactId>kylin-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../kylin-parent/kylin-parent-springboot/pom.xml</relativePath>
+        <relativePath>../kylin-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
