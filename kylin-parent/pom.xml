@@ -22,6 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
+        <autoconfig.file>antx.properties</autoconfig.file>
 
         <mybatis.version>3.2.8</mybatis.version>
         <mybatis-spring.version>1.2.3</mybatis-spring.version>
@@ -138,6 +139,32 @@
         </dependencies>
     </dependencyManagement>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <autoconfig.file>antx-dev.properties</autoconfig.file>
+            </properties>
+        </profile>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <autoconfig.file>antx-qa.properties</autoconfig.file>
+            </properties>
+        </profile>
+        <profile>
+            <id>stage</id>
+            <properties>
+                <autoconfig.file>antx-stage.properties</autoconfig.file>
+            </properties>
+        </profile>
+        <profile>
+            <id>pro</id>
+            <properties>
+                <autoconfig.file>antx-pro.properties</autoconfig.file>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
