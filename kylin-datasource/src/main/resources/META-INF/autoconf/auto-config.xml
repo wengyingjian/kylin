@@ -36,6 +36,6 @@
         <property name="datasource.slave.minEvictableIdleTimeMillis" defaultValue="30000" required="false" description="Slave database minEvictableIdleTimeMillis"/>
     </group>
     <script>
-        <generate template="datasource.properties.vm" destfile="WEB-INF/classes/datasource.properties"/>
+        <generate template="datasource.properties.vm" destfile="datasource.properties"/>
     </script>
 </config>

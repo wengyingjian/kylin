@@ -9,6 +9,6 @@
     </group>
 
     <script>
-        <generate template="redis.properties.vm" destfile="WEB-INF/classes/redis.properties" />
+        <generate template="redis.properties.vm" destfile="redis.properties" />
     </script>
 </config>
