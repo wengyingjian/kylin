@@ -6,6 +6,6 @@
 		<property name="log.level" defaultValue="info" description="日志级别" />
 	</group>
 	<script>
-		<generate template="log4j2.yml.vm" destfile="log4j2.yml"/>
+		<generate template="log4j2.yml.vm" destfile="WEB-INF/classes/log4j2.yml"/>
 	</script>
 </config>
