@@ -5,7 +5,7 @@
 ### 1.[kylin-archetype](http://github.com/wengyingjian/kylin-archetype)
 maven脚手架项目,可以通过该archetype自动集成此项目的各个模块,进行自动化,规范化开发.
 
-### 2.[demo-kylin](http;//github.com/wengyingjian/demo-kylin)
+### 2.[demo-kylin](http://github.com/wengyingjian/demo-kylin)
 集成了此项目依赖的demo项目.
 
 ## 二.模块说明
